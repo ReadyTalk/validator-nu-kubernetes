@@ -8,4 +8,4 @@ RUN unzip -d /opt /opt/vnu.jar_17.7.0.zip
 USER nobody
 WORKDIR /opt/dist
 
-CMD ["java", "-cp", "vnu.jar", "nu.validator.servlet.Main", "8888"]
+CMD ["java", "-cp", "vnu.jar", "nu.validator.servlet.Main", "--errors-only", "8888"]
