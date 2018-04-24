@@ -6,6 +6,7 @@ image:
   repository: sudermanjr/validator-nu-kubernetes
   tag: latest
   pullPolicy: Always
+  # pullSecret: repo-secret
 service:
   name: validator
   type: ClusterIP
